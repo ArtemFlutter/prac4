@@ -27,18 +27,4 @@ jobs:
       with:
         credentials_json: ${{ secrets.GCP_CREDENTIALS }}
 
-    - name: Configure Docker for GCP
-      run: |
-        gcloud auth configure-docker
-
-    - name: Build Docker image
-      run: |
-        docker build -t gcr.io/${{ secrets.GCP_PROJECT_ID }}/myapp:latest .
-
-    - name: Push Docker image to Google Container Registry
-      run: |
-        docker push gcr.io/${{ secrets.GCP_PROJECT_ID }}/myapp:latest
-
-    - name: Deploy to Google Cloud Run
-      run: |
-        gcloud run deploy myapp --image gcr.io/${{ secrets.GCP_PROJECT_ID }}/myapp:latest --platform managed --region us-central1
+    

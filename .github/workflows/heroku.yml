@@ -22,18 +22,8 @@ jobs:
       run: |
         pip install -r requirements.txt
 
-    - name: Build Docker image
-      run: |
-        docker build -t registry.heroku.com/${{ secrets.HEROKU_APP_NAME }}/web .
-
+   
     - name: Log in to Heroku Container Registry
       run: |
         echo ${{ secrets.HEROKU_API_KEY }} | docker login --username=_ --password-stdin registry.heroku.com
 
-    - name: Push Docker image to Heroku
-      run: |
-        docker push registry.heroku.com/${{ secrets.HEROKU_APP_NAME }}/web
-
-    - name: Deploy to Heroku
-      run: |
-        heroku container:release web --app ${{ secrets.HEROKU_APP_NAME }}
