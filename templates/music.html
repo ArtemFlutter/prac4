@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Музыкальный Сервис</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #444;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        .content {
+            padding: 20px;
+        }
+        .album-list {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+        .album {
+            background-color: white;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .album img {
+            width: 100%;
+            border-radius: 8px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Добро пожаловать в музыкальный сервис</h1>
+    </header>
+    <nav>
+        <a href="index.html">Главная</a>
+        <a href="#">Альбомы</a>
+        <a href="#">Исполнители</a>
+        <a href="#">Контакты</a>
+    </nav>
+    <div class="content">
+        <h2>Популярные альбомы</h2>
+        <div class="album-list">
+            <div class="album">
+                <img src="https://via.placeholder.com/300x300" alt="Album 1">
+                <h3>Альбом 1</h3>
+                <p>Описание альбома</p>
+            </div>
+            <div class="album">
+                <img src="https://via.placeholder.com/300x300" alt="Album 2">
+                <h3>Альбом 2</h3>
+                <p>Описание альбома</p>
+            </div>
+            <div class="album">
+                <img src="https://via.placeholder.com/300x300" alt="Album 3">
+                <h3>Альбом 3</h3>
+                <p>Описание альбома</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Музыкальный сервис</p>
+    </footer>
+</body>
+</html>

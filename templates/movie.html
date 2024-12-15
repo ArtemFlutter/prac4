@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кино Сервис</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #444;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        .content {
+            padding: 20px;
+        }
+        .movie-list {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+        .movie {
+            background-color: white;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .movie img {
+            width: 100%;
+            border-radius: 8px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Добро пожаловать в кино сервис</h1>
+    </header>
+    <nav>
+        <a href="#">Главная</a>
+        <a href="#">Фильмы</a>
+        <a href="#">Сериалы</a>
+        <a href="#">Контакты</a>
+    </nav>
+    <div class="content">
+        <h2>Популярные фильмы</h2>
+        <div class="movie-list">
+            <div class="movie">
+                <img src="https://via.placeholder.com/300x450" alt="Film 1">
+                <h3>Фильм 1</h3>
+                <p>Описание фильма</p>
+            </div>
+            <div class="movie">
+                <img src="https://via.placeholder.com/300x450" alt="Film 2">
+                <h3>Фильм 2</h3>
+                <p>Описание фильма</p>
+            </div>
+            <div class="movie">
+                <img src="https://via.placeholder.com/300x450" alt="Film 3">
+                <h3>Фильм 3</h3>
+                <p>Описание фильма</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Кино сервис</p>
+    </footer>
+</body>
+</html>
